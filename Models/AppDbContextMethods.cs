@@ -171,8 +171,6 @@ namespace SchoolOfProgramming.Models
                         break;
                 }
             } while (userMenuChoice != 0);
-
-
         }
 
 
@@ -324,7 +322,6 @@ namespace SchoolOfProgramming.Models
         {
             using (AppDbContext dbContext = new AppDbContext())
             {
-
                 Console.WriteLine("Please fill out these details to add a new employee to the database");
                 Console.Write("First name: ");
                 string empFirstName = Console.ReadLine();
@@ -403,8 +400,6 @@ namespace SchoolOfProgramming.Models
 
                 Console.WriteLine($"Name: {empLastName}, {empFirstName}\nDate of birth: {DoB}\n" +
                     $"Hired as: {role}\nFirst day of work: {result}");
-
-
 
                 var emp = new Employee //Här skapar jag då ett nytt Employee objekt av all data jag samlta in
                 {
